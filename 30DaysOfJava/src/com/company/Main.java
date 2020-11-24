@@ -10,8 +10,9 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) throws FileNotFoundException {
-        readFromFile();
-        workingWithCollection();
+       // readFromFile();
+        //workingWithCollection();
+        //twoDimensionArray();
     }
 
     private static void readFromFile() throws FileNotFoundException {
@@ -35,5 +36,19 @@ public class Main {
 
         System.out.println(names.remove());
         System.out.println(names.remove());
+    }
+
+    private static void twoDimensionArray(){
+        int[][] numbers = {
+                {12,23,67,32,6},
+                {5,5,45,56,423,86,56,23,95},
+                {45,1,52,89,54,3,0}
+        };
+        for(int i = 0; i < numbers.length; i++){
+            for(int j = 0; j < numbers[i].length; j++){
+                System.out.print(numbers[i][j] + " ");
+            }
+            System.out.println();
+        }
     }
 }
